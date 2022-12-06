@@ -7,14 +7,19 @@ import { AddComponent } from './add/add.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewAllComponent } from './view-all/view-all.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[{path:"",component:AddComponent},
-                      {path:"add",component:AddComponent},]
+                      {path:"add",component:AddComponent},
+                      {path:"view",component:ViewAllComponent},]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddComponent
+    AddComponent,
+    ViewAllComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
