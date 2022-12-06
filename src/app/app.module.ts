@@ -20,6 +20,7 @@ const myRoute:Routes=[{path:"",component:AddComponent},
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    RouterModule.forRoot(myRoute),
     FormsModule,
     HttpClientModule
   ],
